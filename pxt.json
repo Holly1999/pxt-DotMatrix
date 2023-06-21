@@ -1,7 +1,7 @@
 {
-    "name": "pxt-dotmatrix",
+    "name": "DotMatrix",
     "version": "1.0.1",
-    "description": "dotmatrix for makecode",
+    "description": "Makecode DotMatrix Package for micro:bit",
     "license": "MIT",
     "dependencies": {
         "core": "*",
