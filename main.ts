@@ -9,7 +9,8 @@ namespace DotMatrix {
     let MAX7219_PIN_CS = DigitalPin.P1
 
     //% parts="DotMatrix" blockId="InitMAX7219" weight=80
-    //% block="Initialize MAX7219 |CS %cs |MOSI %mosi |SCK %sck"    
+    //% block="Initialize MAX7219 |CS %cs |MOSI %mosi |SCK %sck"
+    //% cs.defl=DigitalPin.P1 mosi.defl=DigitalPin.P2 sck.defl=DigitalPin.P0
     export function InitMAX7219(cs: DigitalPin, mosi: DigitalPin, sck: DigitalPin) {
         MAX7219_PIN_CS = cs
 
@@ -65,7 +66,8 @@ namespace DotMatrix {
     }
 
     //% parts="DotMatrix" blockId="ShowCustText" weight=70
-    //% block="Show customize array %text"    
+    //% block="Show customize array %text"
+    //% text.defl="B00000000,B00000000,B00000000,B00000000,B00000000,B00000000,B00000000,B00000000"
     export function ShowCustText(text: string) {
         let tempTextArray: string[] = []
         let currentIndex = 0
